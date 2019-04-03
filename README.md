@@ -1,5 +1,7 @@
 # contracts
 eos smart-contract
 
-eos version: eosio.cdt/1.6.1
+# eos version:
+**eosio_1.7.0-1  
+**eosio.cdt_1.6.1-1
 
