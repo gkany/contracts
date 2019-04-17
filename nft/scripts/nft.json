@@ -1,0 +1,117 @@
+[
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "小MEET",
+        "name_en": "Little MEET",
+        "ID": "1",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "4",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "TP旺",
+        "name_en": "TP Dog",
+        "ID": "2",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "1",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "Ydapp",
+        "name_en": "Ydapp",
+        "ID": "3",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "1",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "小猪美美",
+        "name_en": "Piggy",
+        "ID": "4",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "2",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "单身狗",
+        "name_en": "Single Dog",
+        "ID": "5",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "1",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "招财猫",
+        "name_en": "Lucky Kitten",
+        "ID": "6",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "2",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "小ST",
+        "name_en": "Little ST",
+        "ID": "7",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "1",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "疯狂摇滚",
+        "name_en": "Crazy Rock",
+        "ID": "8",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "1",
+        "img_url": ""
+    },
+    {
+        "world_view": "snake",
+        "desc": "",
+        "name": "黄色风暴",
+        "name_en": "Yellow Storm",
+        "ID": "9",
+        "star": "1",
+        "add_weight": "50",
+        "cycle_num": "2",
+        "img_url": ""
+    }
+
+]
+
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
+cleos push action eosio create '{"creator": "eosio", "owner": "eosio", "explain": "", "worldview": "snake"}' -p eosio@active
