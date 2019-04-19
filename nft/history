@@ -1,0 +1,289 @@
+ 1459  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-12-3-buy-" -p gkany2331one@active
+ 1461  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-12-3-buy-" -p gkany2331one@active
+ 1462  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1463  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-12-3-buy-" -p gkany2331one@active
+ 1465  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1466  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1469  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1470  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-12-3-buy-" -p gkany2331one@active
+ 1471  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1472  cleosss get table aali5fkop2md aali5fkop2md nftts
+ 1473  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-12-3-buy-" -p gkany2331one@active
+ 1474  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1475  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1477  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1478  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1482  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1483  cleosss get table aali5fkop2md aali5fkop2md nftts
+ 1484  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1485  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2331one-7-12-sell-" -p gkany2345one@active
+ 1486  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-7-12-sell-" -p gkany2345one@active 
+ 1487  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1488  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active 
+ 1489  history | grep "set " | grep "cleosss"
+ 1490  cleosss set account permission gkany2331one active '{"threshold" : 1, "keys" : [{"key":"EOS6BJyYjxHe6jZgtaxJaS2WFidi4yVtE7TipUqUx9E4yDr52EjZe","weight":1}], "accounts" : [{"permission":{"actor":"gkany2345one","permission":"eosio.code"},"weight":1}]}' owner -p gkany2345one@owner
+ 1491  cleosss set account permission aali5fkop2md active '{"threshold" : 1, "keys" : [{"key":"EOS76Hyi7XkHKeXPhmEqZLtvKPGu7S3Pm3fX5dSbJttEsUbLitUak
+ 1492  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active 
+ 1495  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1496  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active 
+ 1497  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1498  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active
+ 1500  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1501  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1502  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active
+ 1503  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-4-" -p gkany2331one@active
+ 1511  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1512  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1513  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active
+ 1515  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1517  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active
+ 1518  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@active
+ 1519  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@active
+ 1520  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-2-" -p gkany2331one@active
+ 1521  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active
+ 1522  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-4-" -p gkany2331one@active
+ 1523  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-0-" -p gkany2345one@active
+ 1524  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-0-" -p gkany2331one@active
+ 1525  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-4-" -p gkany2331one@active
+ 1526  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@active
+ 1527  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1528  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-2-" -p gkany2331one@active
+ 1529  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@active
+ 1530  cleosss transfer gkany2331one aali5fkop2md "0.0007 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@active
+ 1531  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active
+ 1540  history | grep "cleosss"
+ 1541  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1544  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1545  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1546  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@active
+ 1547  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@owner
+ 1551  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1552  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@owner
+ 1553  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1554  cleosss get table aali5fkop2md aali5fkop2md nftts
+ 1555  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1556  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@owner
+ 1557  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-7-" -p gkany2331one@owner
+ 1558  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1560  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1561  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1562  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@owner
+ 1563  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1566  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1567  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-3-" -p gkany2331one@owner
+ 1568  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1569  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1572  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1573  cleosss transfer
+ 1574  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner -j
+ 1575  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1576  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@owner -j
+ 1577  cleosss get table aali5fkop2md aali5fkop2md nftts
+ 1578  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1579  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-0-" -p gkany2345one@owner -j
+ 1585  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1589  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1590  cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-0-" -p gkany2331one@owner
+ 1592  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1593  cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-0-" -p gkany2331one@owner
+ 1594  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1597  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-1-" -p gkany2345one@owner
+ 1598  cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-0-" -p gkany2331one@owner
+ 1599  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-1-" -p gkany2345one@owner
+ 1600  cleosss transfer gkany2345one aali5fkop2md "0.0002 EOS" "cancel-gkany2345one-0-" -p gkany2345one@owner
+ 1601  cleosss transfer gkany2345one aali5fkop2md "0.0002 EOS" "cancel-gkany2345one-3-" -p gkany2345one@owner
+ 1602  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1603  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-2-" -p gkany2345one@owner
+ 1604  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-4-" -p gkany2345one@owner
+ 1609  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1611  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-3-" -p gkany2345one@owner
+ 1612  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1613  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-1-" -p gkany2345one@owner
+ 1614  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-1-" -p gkany2345one@owner
+ 1615  cleosss get table 
+ 1616  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type name
+ 1617  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type name -L gkany2331one
+ 1618  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type name -L gkany2345one
+ 1619  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type i64 -L gkany2345one
+ 1624  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1627  cleosss get table aali5fkop2md aali5fkop2md nftts --index 2 --key-type i64 -L gkany2345one
+ 1628  cleosss get table aali5fkop2md aali5fkop2md nftts --index 2 --key-type i64 -L gkany2331one
+ 1629  cleosss get table aali5fkop2md aali5fkop2md nftts --index 2 --key-type i64 -L gkany2331one 
+ 1630  cleosss get table aali5fkop2md aali5fkop2md nftts --index 2 --key-type i64 -L gkany2331one -l 3
+ 1631  cleosss get table aali5fkop2md aali5fkop2md nftts --index 2 --key-type i64 -L gkany2331one -l 2
+ 1632  cleosss get table aali5fkop2md aali5fkop2md nftts --index 2 --key-type i64 -L gkany2331one 
+ 1633  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type i64 -L gkany2331one 
+ 1635  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1639  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1643  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type i64 -L gkany2331one 
+ 1644  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type name -L gkany2331one 
+ 1645  cleosss get table aali5fkop2md aali5fkop2md orders --index 2 --key-type name -L gkany2345one 
+ 1646  cleosss get table aali5fkop2md aali5fkop2md orders --index 3 --key-type name -L gkany2345one 
+ 1647  cleosss get table aali5fkop2md aali5fkop2md orders --index 1 --key-type name -L gkany2345one 
+ 1648  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1653  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-7-12-sell-" -p gkany2345one@active
+ 1654  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1655  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-2-12-sell-" -p gkany2345one@active
+ 1656  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1657  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1659  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-7-" -p gkany2345one@owner
+ 1660  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-6-" -p gkany2345one@owner
+ 1661  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1665  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1667  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-6-" -p gkany2345one@owner
+ 1670  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-6-" -p gkany2345one@owner
+ 1671  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1672  cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-7-" -p gkany2331one@owner
+ 1673  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1674  history | grep "cleosss" | grep "set contra"
+ 1675   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1676  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1677  history | grep "cleosss" | grep "create"
+ 1680  history | grep "cleosss"
+ 1681  history | grep "cleosss" | grep "order-"
+ 1682  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1683  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1684   cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-6-" -p gkany2345one@owner
+ 1685   cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner
+ 1689   cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner
+ 1690  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1691   cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner -p gkany2331one@active
+ 1696   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1699   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1700  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner -p gkany2331one@active
+ 1705   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1706  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1707  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner -p gkany2331one@active
+ 1709  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-5-" -p gkany2345one@owner
+ 1710   cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-5-" -p gkany2331one@owner
+ 1711  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1713  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1714  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1715  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner
+ 1717  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-4-" -p gkany2345one@owner
+ 1718  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-3-" -p gkany2345one@owner
+ 1719  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner
+ 1720  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1723  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-7-12-sell-" -p gkany2345one@active
+ 1724  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1725  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner
+ 1726  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-6-" -p gkany2345one@owner
+ 1730   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1731  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1732  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-6-" -p gkany2345one@owner
+ 1733  cleosss transfer gkany2345one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2345one@owner
+ 1734  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2331one-5-" -p gkany2331one@owner
+ 1735  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "trade-gkany2331one-gkany2331one-6-" -p gkany2331one@owner
+ 1736  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "trade-gkany2345one-gkany2331one-6-" -p gkany2331one@owner
+ 1737  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-6-" -p gkany2331one@owner
+ 1738  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-5-" -p gkany2331one@owner
+ 1739  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2331one-gkany2345one-5-" -p gkany2331one@owner
+ 1740  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2331one-gkany2331one-5-" -p gkany2331one@owner
+ 1741  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1743   cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-12-3-buy-" -p gkany2331one@active
+ 1744   cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-7-3-buy-" -p gkany2331one@active
+ 1745  cleosss get table aali5fkop2md aali5fkop2md orders 
+ 1746  cleosss get table aali5fkop2md aali5fkop2md nftts
+ 1751   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1752  history | grep "cleosss" | grep "action"
+ 1753  cleosss push action aali5fkop2md orderclean '{"orderid": 0}' -p aali5fkop2md@owner
+ 1754  cleosss push action aali5fkop2md orderclean '{"orderid": 1}' -p aali5fkop2md@owner
+ 1755  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1756  cleosss push action aali5fkop2md orderclean '{"orderid": 2}' -p aali5fkop2md@owner
+ 1757  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1758  cleosss push action aali5fkop2md orderclean '{"orderid": 4}' -p aali5fkop2md@owner
+ 1759  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1760  cleosss push action aali5fkop2md orderclean '{"orderid": 5}' -p aali5fkop2md@owner
+ 1761  cleosss push action aali5fkop2md orderclean '{"orderid": 6}' -p aali5fkop2md@owner
+ 1762  cleosss push action aali5fkop2md orderclean '{"orderid": 7}' -p aali5fkop2md@owner
+ 1764  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1766  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-7-3-buy-" -p gkany2331one@active
+ 1768  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1769  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-7-12-sell-" -p gkany2345one@active 
+ 1770  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1772  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1773  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2331one-gkany233" -p gkany2331one@owner
+ 1774   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1776   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1779   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1780  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1781   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@owner
+ 1782   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@owner
+ 1784   cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-0-" -p gkany2331one@owner
+ 1785   cleosss transfer gkany2331one aali5fkop2md "0.0001 EOS" "cancel-gkany2331one-0-" -p gkany2331one@owner
+ 1786  cleosss transfer gkany2345one aali5fkop2md "0.0002 EOS" "cancel-gkany2345one-3-" -p gkany2345one@owner
+ 1787  cleosss transfer gkany2345one aali5fkop2md "0.0002 EOS" "cancel-gkany2345one-1-" -p gkany2345one@owner
+ 1788  cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-0-" -p gkany2331one@owner
+ 1789  cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-1-" -p gkany2331one@owner
+ 1790  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1791  cleosss push action aali5fkop2md orderclean '{"orderid": 0}' -p aali5fkop2md@owner
+ 1792  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1795  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-7-12-sell-" -p gkany2345one@active 
+ 1796  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1797  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1799  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1800  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@active
+ 1801  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-1-" -p gkany2331one@active
+ 1802  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1804  cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" "cancel-gkany2331one-1-" -p gkany2331one@owner
+ 1805  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1806  cleosss transfer gkany2345one aali5fkop2md "0.0001 EOS" "cancel-gkany2345one-0-" -p gkany2345one@owner
+ 1807  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1814   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1815  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1816  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1818  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-7-12-sell-" -p gkany2345one@active
+ 1820  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1822  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1823   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@active
+ 1824   cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2331one@active
+ 1825   cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2345one@active
+ 1830  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1831  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1832   cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "trade-gkany2345one-gkany2331one-0-" -p gkany2345one@active
+ 1833   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-0-' -p gkany2331one@active
+ 1836   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1839  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1840  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1841   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-0-' -p gkany2331one@active
+ 1842   cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" 'trade-gkany2345one-0-' -p gkany2331one@active
+ 1843   cleosss transfer gkany2331one aali5fkop2md "0.0002 EOS" 'cancel-gkany2345one-0-' -p gkany2331one@active
+ 1844  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1846  cleosss transfer gkany2345one aali5fkop2md "0.0012 EOS" "order-gkany2345one-7-12-sell-" -p gkany2345one@active
+ 1847  cleosss transfer gkany2331one aali5fkop2md "0.0003 EOS" "order-gkany2331one-5-3-sell-" -p gkany2331one@active
+ 1848  cleosss get table aali5fkop2md aali5fkop2md nftts
+ 1849  cleosss transfer gkany2345one aali5fkop2md "0.0011 EOS" "order-gkany2345one-8-11-sell-" -p gkany2345one@active
+ 1850  cleosss transfer gkany2345one aali5fkop2md "0.0011 EOS" "order-gkany2345one-6-11-sell-" -p gkany2345one@active
+ 1851  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1862  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1863  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1864   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-0-' -p gkany2331one@active
+ 1868  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1869  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1870   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-0-' -p gkany2331one@active
+ 1871   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-' -p gkany2331one@active
+ 1872   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-' -p gkany2331one@active
+ 1875   cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-' -p gkany2331one@active
+ 1879  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1882  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1897   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1898  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1899  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-' -p gkany2331one@active
+ 1903   cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1918  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1921  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1922  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1923  cleosss get table aali5fkop2md aali5fkop2md orders
+ 1925  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1926  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1927  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-buy-' -p gkany2331one@active
+ 1929  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1930  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-buy-' -p gkany2331one@active
+ 1931  cleosss get table aali5fkop2md aali5fkop2md orders1
+ 1932  cleosss get table aali5fkop2md aali5fkop2md nftts
+ 1933  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-buy-' -p gkany2331one@active
+ 1935  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-buy-' -p gkany2331one@active
+ 1937  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-buy-' -p gkany2331one@active
+ 1938  cleosss set contract aali5fkop2md /Users/a123/prj/contracts/eos1808/ nft.wasm nft.abi -p aali5fkop2md@owner
+ 1939  cleosss transfer gkany2331one aali5fkop2md "0.0012 EOS" 'trade-gkany2345one-gkany2331one-1-buy-' -p gkany2331one@active
+ 1956  history | grep "cleosss" >> history
