@@ -666,8 +666,6 @@ ACTION nft::addmapping(name owner, id_type fromid, id_type targetid, id_type cha
 
     bool fromfound = true;
     for(; it != assetmapping_data.end() && it->fromid == fromid; ++it) {
-        // print(it->fromid);
-        // //print(it->mappingid);
         if(it->chainid == chainid) {
             fromfound = false;
             break;
@@ -747,7 +745,7 @@ void nft::createorder(name owner, id_type nftid, asset amount, std::string side,
         for( ; iter != order_data.end() && iter->nftid == nftid; ++iter) {
             if(iter->side == "sell") {
                 isValid = false;  //one nft one sell
-                break;  
+                break;
             }
         }
         check(isValid, "nft sell order is not valid");
@@ -788,31 +786,14 @@ void nft::cancelorder(name owner, id_type id, std::string memo) {
     }
 }
 
-void nft::trade(name from, name to, id_type orderid, std::string side, std::string memo) {
+void nft::trade(const name& from, const name& to, id_type orderid, const std::string& side, const std::string& memo) {
     check(is_account(from), "from account does not exist");
     check(is_account(to), "to account does not exist");
-
-    // auto iter = order_tables.find(orderid);
-    // check(iter != order_tables.end(), std::to_string(orderid) + ", trade failed, order is not exist");
     check(side == "buy" || side == "sell", "side must be buy or sell");
-    name owner;
-    if (side == "buy") {
-        owner = from;
-    } else {
-        owner = to;
-    }
 
-    auto order_data = order_tables.get_index<"byowner"_n>();
-    auto iter = order_data.lower_bound(owner.value);
-    bool isValid = true;
-    for( ; iter != order_data.end(); ++iter) {
-        if(iter->id == orderid) {
-            isValid = false;
-            break;  
-        }
-    }
-    check(isValid, std::to_string(orderid) + ", trade failed, order is not exist" + memo);
-    //order_tables.erase(iter);
+    auto iter = order_tables.find(orderid);
+    check(iter != order_tables.end(), std::to_string(orderid) + ", trade failed, order is not exist");
+    order_tables.erase(iter);
 
     auto status_iter = index_tables.find(iter->nftid);
     check(status_iter != index_tables.end(), "nft index does not exist");
@@ -820,10 +801,12 @@ void nft::trade(name from, name to, id_type orderid, std::string side, std::stri
 
     auto nft_iter = nft_tables.find(iter->nftid);
     check(nft_iter != nft_tables.end(), "nft asset is not exist");
-    if (iter->side == "buy") {
+    if (iter->side == "buy" && side == "sell") {
         check(nft_iter->owner == to, "buy order, owner is not equal to account");
+    } else if (iter->side == "sell" && side == "buy") {
+        check(nft_iter->owner == iter->owner, "sell order, owner is not equal from account");
     } else {
-        //check(nft_iter->owner == iter->owner, "sell order, owner is not equal from account");
+        check(false, "invalid side");
     }
     nft_tables.modify(nft_iter, _self, [&](auto& nft_data) {
         nft_data.auth = to;
@@ -862,69 +845,73 @@ void nft::trade(name from, name to, id_type orderid, std::string side, std::stri
             std::make_tuple(_self, from, amount, memo))
         .send();
     }
-    
 }
 
-    void nft::parse_memo(std::string memo, std::string& action, std::map<std::string, std::string>& params) {
-        // remove space
-        memo.erase(std::remove_if(memo.begin(), memo.end(), [](unsigned char x) { 
-                return std::isspace(x); }), memo.end());
+void nft::parse_memo(std::string memo, std::string& action, std::map<std::string, std::string>& params) {
+    // remove space
+    memo.erase(std::remove_if(memo.begin(), memo.end(), [](unsigned char x) { 
+            return std::isspace(x); }), memo.end());
 
-        size_t pos;
-        std::string container;
-        pos = sub2sep(memo, container, '-', 0, true);
-        check(!container.empty(), "no action");
-        action = container;
-        if (container == "order") {
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no owner");
-            params["owner"] = container;
+    size_t pos;
+    std::string container;
+    pos = sub2sep(memo, container, '-', 0, true);
+    check(!container.empty(), "no action");
+    action = container;
+    if (container == "order") {
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no owner");
+        params["owner"] = container;
 
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no nft id");
-            params["nftid"] = container;
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no nft id");
+        params["nftid"] = container;
 
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no price");
-            params["price"] = container;
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no price");
+        params["price"] = container;
 
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no side");
-            check(container == "buy" || container == "sell", "side must be buy or sell");
-            params["side"] = container;
-        } else if (container == "trade") {
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no from account");
-            params["from"] = container;
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no side");
+        check(container == "buy" || container == "sell", "side must be buy or sell");
+        params["side"] = container;
+    } else if (container == "trade") {
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no from account");
+        params["from"] = container;
 
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no to account");
-            params["to"] = container;
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no to account");
+        params["to"] = container;
 
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no order id");
-            params["id"] = container;
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no order id");
+        params["id"] = container;
 
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no side");
-            check(container == "buy" || container == "sell", "side must be buy or sell");
-            params["side"] = container;
-        } else if (container == "cancel") {
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no from account");
-            params["owner"] = container;
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no side");
+        check(container == "buy" || container == "sell", "side must be buy or sell");
+        params["side"] = container;
+    } else if (container == "cancel") {
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no from account");
+        params["owner"] = container;
 
-            pos = sub2sep(memo, container, '-', ++pos, true);
-            check(!container.empty(), "no order id");
-            params["id"] = container;
-        }
+        pos = sub2sep(memo, container, '-', ++pos, true);
+        check(!container.empty(), "no order id");
+        params["id"] = container;
     }
+}
 
 void nft::transfer(const name& from, const name& to, const asset& quantity, const std::string& memo) {
     check(is_account(from), "from account does not exist");
     check(is_account(to), "to account does not exist");
-    //check(to == _self.value(), "to account error");
+    check(quantity.symbol.is_valid(), "invalid symbol name");
+    //check(quantity.symbol.code() == "EOS", "transfer must be EOS");
+    check(quantity.amount >= FEE, "transfer fee too small");
     check(memo.size() <= 256 && !memo.empty(), "memo has more than 256 bytes or is empty");
+    if (from == _self || to != _self) {
+        return;
+    }
 
     std::map<std::string, std::string> params;
     std::string action;
@@ -944,9 +931,8 @@ void nft::transfer(const name& from, const name& to, const asset& quantity, cons
         std::string side = params["side"];
         auto amount = quantity;
         if (side == "buy") {
-            check(amount.amount == nPrice, "buy nft, transfer quantity error");
+            check(amount.amount == nPrice, "buy nft, transfer quantity not equal price");
         } else {
-            check(amount.amount >= FEE, "sell nft, transfer fee error");
             amount.amount = nPrice;
         }
         createorder(name(owner), nftid, amount, side, memo);
@@ -954,20 +940,22 @@ void nft::transfer(const name& from, const name& to, const asset& quantity, cons
         check(params.find("from") != params.end() && params.find("to") != params.end()
             && params.find("id") != params.end() && params.find("side") != params.end(),
             "trade param error");
-        std::string nft_from = params["from"];
-        std::string nft_to = params["to"];
         std::string id = params["id"];
         uint64_t order_id = stoi(id);
-        std::string side = params["side"];
-        trade(name(nft_from), name(nft_to), order_id, side, memo);
+        if(params["side"] == "buy") {
+            check(from.to_string() == params["to"], "transfer from not equal memo to account");
+        } else {
+            check(from .to_string() == params["from"], "transfer from not equal memo from account");
+        }
+        trade(name(params["from"]), name(params["to"]), order_id, params["side"], memo);
     } else if(action == "cancel") {
         check(params.find("owner") != params.end() && params.find("id") != params.end(), 
             "cancel order param error");
         check(quantity.amount >= FEE, "cancel order, fee not enough");
-        std::string owner = params["owner"];
+        check(from.to_string() == params["owner"], "transfer from not equal memo owner");
         std::string id = params["id"];
         uint64_t order_id = stoi(id);
-        cancelorder(name(owner), order_id, memo);
+        cancelorder(name(params["owner"]), order_id, memo);
     }
 }
 

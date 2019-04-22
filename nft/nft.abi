@@ -978,7 +978,7 @@
             "key_types": []
         },
         {
-            "name": "orders1",
+            "name": "orders3",
             "type": "order",
             "index_type": "i64",
             "key_names": [],
