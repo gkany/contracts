@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Usage: ./createAccount.sh accountName
+
 file="keytemp"
 keys="accountKeys"
 name=$1
