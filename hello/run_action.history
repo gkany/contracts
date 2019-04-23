@@ -1,5 +1,4 @@
-dev@ubuntu:~/contracts/hello$ cleos-cpp -abigen -o hello.wasm hello.cpp
-
+eosio-cpp -abigen -I. -o hello.wasm hello.cpp
 
 dev@ubuntu:~/contracts/hello$
 dev@ubuntu:~/contracts/hello$ ls
